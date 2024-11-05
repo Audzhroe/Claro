@@ -7,7 +7,6 @@ st.header('!Hola, Streamlit!')
 st.write('Esto es una aplicación simple')
 st.image('logo.png')
 if st.button('Presiona Aqui',key = 1):
-    main = cargar_datos(archivo)
     msg_counts = main.groupby('TIPO')['MSG'].count()
     st.bar_chart(msg_counts,x_label = 'Tipos de mensaje', y_label = 'Cantidad')
 
