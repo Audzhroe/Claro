@@ -6,9 +6,7 @@ st.title('Mi primerra aplicación de Streamlit')
 st.header('!Hola, Streamlit!')
 st.write('Esto es una aplicación simple')
 st.image('logo.png')
-if st.button('Presiona Aqui',key = 1):
-    msg_counts = main.groupby('TIPO')['MSG'].count()
-    st.bar_chart(msg_counts,x_label = 'Tipos de mensaje', y_label = 'Cantidad')
+if st.button('Presiona Aqui',key = 1)
 
 input = st.text_input('Escribe algo',key = 2)
 st.write('Escribiste:', input)
